@@ -1,0 +1,4 @@
+fonts_dir: "fonts"
+require:
+  - susy
+  - breakpoint

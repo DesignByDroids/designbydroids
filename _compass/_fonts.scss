@@ -1,0 +1,7 @@
+@import "compass/css3/font-face";
+
+@include font-face("LatoLatinBold", font-files("LatoLatin-Bold.woff", "LatoLatin-Bold.ttf"), "LatoLatin-Bold.eot");
+@include font-face("LatoLatinBoldItalic", font-files("LatoLatin-BoldItalic.woff", "LatoLatin-BoldItalic.ttf"), "LatoLatin-BoldItalic.eot");
+@include font-face("Serif12Beta-Bold", font-files("serif12beta-bold.woff2", "serif12beta-bold.woff", "serif12beta-bold.ttf", "serif12beta-bold.svg"), "serif12beta-bold.eot");
+@include font-face("Serif12Beta-Regular", font-files("serif12beta-regular.woff2", "serif12beta-regular.woff", "serif12beta-regular.ttf", "serif12beta-regular.svg"), "serif12beta-regular.eot");
+@include font-face("Serif12Beta-Italic", font-files("serif12beta-italic.woff2", "serif12beta-italic.woff", "serif12beta-italic.ttf", "serif12beta-italic.svg"), "serif12beta-italic.eot");

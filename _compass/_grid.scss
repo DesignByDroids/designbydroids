@@ -1,0 +1,54 @@
+
+$mobile-max: 320px;
+$tablet-portrait-max: 768px;
+$tablet-landscape-max: 1024px;
+$desktop-max: 1366px;
+$hd-max: 1440px;
+
+@include border-box-sizing;
+
+$susy: (
+	columns: 4,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+	debug: (
+	    image: show,
+	    color: rgba(#66f, .10),
+	    output: background,
+	    toggle: top right,
+  	),
+);
+
+$susy-tablet: (
+	columns: 8,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+	debug: (
+	    image: show,
+	    color: rgba(#66f, .10),
+	    output: background,
+	    toggle: top right,
+  	),
+);
+
+
+
+@include establish-baseline;
+
+body {
+	@include container();
+
+	@include susy-breakpoint($tablet-portrait-max, $susy-tablet) {
+		@include container();
+	}
+}
+
+header {
+	@include span(4);
+	height: $base-line-height * 4;
+	background-color: $background-color-header;
+}
